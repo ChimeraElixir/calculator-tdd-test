@@ -1,5 +1,13 @@
-const { add } = require('./calculator');
+const { add, subtract, multiply } = require('./calculator');
 
 test('adds two positive numbers correctly', () => {
   expect(add(2, 3)).toBe(5);
+});
+
+test('subtracts two numbers correctly', () => {
+  expect(subtract(5, 3)).toBe(2);
+});
+
+test('multiplies two numbers correctly', () => {
+  expect(multiply(4, 3)).toBe(12);
 });
